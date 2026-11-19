@@ -110,3 +110,5 @@ npm run preview
 ```
 
 The production files are generated in `dist/`.
+
+GitHub Pages is deployed from the `main` branch by the `Deploy to GitHub Pages` workflow. Push changes to `main` (or run the workflow manually) to build and publish `dist/`.
