@@ -1,0 +1,25 @@
+iKnow Final Frontend Release
+============================
+
+The app is ready to run as a frontend-only project. It uses browser localStorage until a backend is connected.
+
+Included:
+- Dashboard and course library
+- YouTube playlist import and individual video import
+- Real playlist/video metadata and thumbnails when the YouTube API key is configured
+- Embedded YouTube player
+- Lesson progress tracking
+- Drag-and-drop lesson ordering
+- Bulk select, complete, and remove
+- Undo for lesson removals
+- Course categories, search, filtering, and sorting
+- Responsive layout and workspace settings
+- Backend-ready data adapter with local backup and connection status
+
+Backend handoff:
+- Configure VITE_API_BASE_URL in .env.
+- Implement GET /api/courses returning { "courses": [...] }.
+- Implement PUT /api/courses accepting { "courses": [...] }.
+- See README.md for the complete contract and security requirements.
+
+No backend, database, authentication service, or deployment credentials are included in this release.
